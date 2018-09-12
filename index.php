@@ -23,5 +23,5 @@ fputs($out, "[APP] Line output.\n"); //writing output operation
 fclose($out); //closing handler
           
     ?>
-   /body>
+   </body>
 </html>
