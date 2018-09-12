@@ -62,9 +62,10 @@
     // Or, an option that also works before PHP 5.3
     echo php_uname('n'); // may output e.g,: sandie
      
+   $out = fopen('php://stdout', 'w'); //output handler
+fputs($out, "your output string.\n"); //writing output operation
+fclose($out); //closing handler
           
-          print "Where did my pastrami sandwich go?";
-      echo  "It went into my stomach.";
     ?>
     </div><!-- /.container -->
 
