@@ -5,19 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+ 
+    <title>NyMark Test/title>
 
-    <title>APPUiO PHP Demo</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -53,17 +45,13 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1>Hallo <?php echo 'APPUiO'?></h1>
-        <p class="lead">APPUiO Example Source To Image PHP</p>
-      </div>
+        <h1>Hello: this host is : <?php echo gethostname();?></h1>
+         <?php echo php_uname('n'); // may output e.g,: sandie?>
+       </div>
     <?php
-    echo gethostname(); // may output e.g,: sandie
-    
-    // Or, an option that also works before PHP 5.3
-    echo php_uname('n'); // may output e.g,: sandie
      
    $out = fopen('php://stdout', 'w'); //output handler
-fputs($out, "your output string.\n"); //writing output operation
+fputs($out, "[APP] Line output.\n"); //writing output operation
 fclose($out); //closing handler
           
     ?>
